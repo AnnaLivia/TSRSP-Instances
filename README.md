@@ -1,5 +1,9 @@
 # Train Single-Routing Selection Problem (TSRSP) — Benchmark Repository
 
+<p align="center">
+  <img src="TSRSP_logo.png" alt="TSRSP Logo" width="200"/>
+</p>
+
 This repository contains the full benchmark dataset used in the work:
 
 > **An exact approach for the Train Single-Routing Selection Problem**  
