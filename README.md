@@ -1,7 +1,7 @@
 # Train Single-Routing Selection Problem (TSRSP) — Benchmark Repository
 
 <p align="center">
-  <img src="TSRSP_logo.png" alt="TSRSP Logo" width="200"/>
+  <img src="TSRSP_logo.png" alt="TSRSP Logo" width="400"/>
 </p>
 
 This repository contains the full benchmark dataset used in the work:
@@ -35,7 +35,7 @@ The repository is organized into the following main folders:
 
 - [`data/`](./data/) — Contains all **benchmark instances** used in the computational experiments, including detailed descriptions of the input formats and directory structure for the **Rouen** and **Lille** railway networks.
 
-- [`results/`](./results/) — Contains the **computational results** obtained for the tested formulations, including instance statistics, CPU time distributions, and performance profiles. A summary of computational results for all instances and formulations is available as an Excel file in the [`results/`](./results/) folder.
+- [`results/`](./results/) — Contains the **computational results** obtained for the tested formulations, including instance statistics, CPU time distributions, and performance profiles. A summary of computational results for all instances and formulations is also available as an Excel file.
 
 Each folder contains its own `README.md` file with further details.
 <br>

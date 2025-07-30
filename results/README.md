@@ -28,12 +28,7 @@ The following box plots show the distribution of CPU times (in seconds) for all 
 - $\varepsilon = 0.9$  
 - $\varepsilon = 0.8$
 
-Each plot includes the median, interquartile range, and potential outliers, as well as the number of optimally solved instances (``\#opt'') out of 100 per group.
-
-**Figures:**
-- `Time_Rouen0.png` – $\varepsilon = 1.0$
-- `Time_Rouen10.png` – $\varepsilon = 0.9$
-- `Time_Rouen20.png` – $\varepsilon = 0.8$
+Each plot includes the median, interquartile range, and potential outliers, as well as the number of optimally solved instances ("\#opt") out of 100 per group.
 
 <div align="center">
   <img src="fig_and_tab/Time_Rouen0.png" width="550"/>
@@ -49,7 +44,7 @@ Each plot includes the median, interquartile range, and potential outliers, as w
 
 ### 📊 Performance Profiles
 
-Following [Dolan and Moré (2002)](https://epubs.siam.org/doi/10.1137/S1064827502417021), the **performance profile** $\rho_f(\tau)$ for a formulation $f$ measures how close its solution times are to the best solver across instances.
+Following [Dolan and Moré (2002)](https://link.springer.com/article/10.1007/s101070100263), the **performance profile** $\rho_f(\tau)$ for a formulation $f$ measures how close its solution times are to the best solver across instances.
 
 Let $t_{i,f}$ be the solution time for instance $i$ with formulation $f$, and $\mathcal{F}$ be the set of all tested formulations:
 
