@@ -39,9 +39,9 @@ The tables in these two PDF files report the following key statistics for each i
 - Information on the objective function values ($Obj$).
 
 For the **Rouen** instances, all instances were solved to optimality. The corresponding table reports the **minimum and maximum optimal objective values** for each group of instances.  
-The complete list of optimal values for all Rouen instances is available in the Excel file [`/data/Computational_Results.xlsx`](../data/Computational_Results.xlsx), in the spreadsheet associated with formulation $G$.
+The complete list of optimal values for all Rouen instances is available in the Excel file [`../results/Computational_Results.xlsx`](../results/Computational_Results.xlsx), in the spreadsheet associated with formulation $G$.
 
-For the **Lille** instances, only three instances—$L_1$, $L_2$, and $L_3$—were solved to optimality. Their respective rows report the optimal solution values.  
+For the **Lille** instances, only three instances ($L_1$, $L_2$, and $L_3$) were solved to optimality. Their respective rows report the optimal solution values.  
 For all remaining instances, the column reports the **best known upper bound** obtained within the time limit (300-seconds).
 <br>
 
