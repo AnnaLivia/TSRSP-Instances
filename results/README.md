@@ -1,7 +1,7 @@
 # Train Single-Routing Selection Problem (TSRSP) — Results Repository
 
 All results reported in this section—**CPU time distributions**, **performance profiles**, and **optimality gap distributions**—refer exclusively to the instances derived from the **Rouen railway network**.  
-These instances are grouped by compatibility graph density, with values of $\varepsilon \in \{1.0,\ 0.9,\ 0.8\}$.
+These instances are grouped by compatibility graph density, with values of $\varepsilon \in {1.0,\ 0.9,\ 0.8}$.
 All experiments were run with a maximum solution time of **300 seconds** per instance.
 
 ## 🕒 CPU Time Results for TSRSP Formulations
