@@ -1,39 +1,20 @@
 # Train Single-Routing Selection Problem (TSRSP) — Results Repository
 
-## 📊 Instance Statistics
-
-Complete statistics for the **Rouen** and **Lille** railway networks are available in the following files:
-- [`Rouen.pdf`](./fig_and_tab/Rouen.pdf)
-- [`Lille.pdf`](./fig_and_tab/Lille.pdf)
-
-Key statistics include:
-
-- Number of trains ($|\mathcal{K}|$);
-- Number of routes ($|\mathcal{V}|$);
-- Number of compatibility edges ($|\mathcal{E}|$);
-- Optimal objective value (`Obj`).
-<br>
+All results reported in this section—**CPU time distributions**, **performance profiles**, and **optimality gap distributions**—refer exclusively to the instances derived from the **Rouen railway network**.  
+These instances are grouped by compatibility graph density, with values of $\varepsilon \in \{1.0,\ 0.9,\ 0.8\}$.
+All experiments were run with a maximum solution time of **300 seconds** per instance.
 
 ## 🕒 CPU Time Results for TSRSP Formulations
 
-
-## ⏳ Time Limit
-
-All experiments were run with a maximum solution time of **300 seconds** per instance.
-
 ### 📈 CPU Time Distributions
 
-The following box plots show the distribution of CPU times (in seconds) for all tested formulations, grouped by edge density levels of the compatibility graph:  
-- $\varepsilon = 1.0$  
-- $\varepsilon = 0.9$  
-- $\varepsilon = 0.8$
-
+The following box plots show the distribution of CPU times (in seconds) for all tested formulations, grouped by edge density levels of the compatibility graph.
 Each plot includes the median, interquartile range, and potential outliers, as well as the number of optimally solved instances ("\#opt") out of 100 per group.
 
 <div align="center">
-  <img src="fig_and_tab/Time_Rouen0.png" width="550"/>
-  <img src="fig_and_tab/Time_Rouen10.png" width="550"/>
-  <img src="fig_and_tab/Time_Rouen20.png" width="550"/>
+  <img src="figures/Time_Rouen0.png" width="550"/>
+  <img src="figures/Time_Rouen10.png" width="550"/>
+  <img src="figures/Time_Rouen20.png" width="550"/>
 </div>
 
 **Observations:**
@@ -55,13 +36,37 @@ $$
 The following plots show $\rho_f(\tau)$ for each formulation and edge density level.
 
 <div align="center">
-  <img src="fig_and_tab/PP_Rouen_0.png" width="480"/>
-  <img src="fig_and_tab/PP_Rouen_10.png" width="480"/>
-  <img src="fig_and_tab/PP_Rouen_20.png" width="480"/>
+  <img src="figures/PP_Rouen_0.png" width="480"/>
+  <img src="figures/PP_Rouen_10.png" width="480"/>
+  <img src="figures/PP_Rouen_20.png" width="480"/>
 </div>
 
 **Highlights:**
 - Formulations $\hat{G}$, $\hat{G}_a$, and $\hat{G}_b$ dominate across all $\tau$.
 - $G$ is competitive for dense graphs but degrades with sparsity.
 - $GW$, $Q$, and $S$ exhibit poor performance and solve fewer instances in acceptable time frames.
+<br>
+
+
+## 📉 Optimality Gap for TSRSP Formulations
+
+The following figure presents box plots of the **percentage optimality gap** (*Opt gap (%)*), computed as the percentage difference between the best feasible solution found and the best lower bound obtained within the time limit by all tested formulations, grouped by edge density levels of the compatibility graph.
+
+These values are reported **only for instances that were not solved to proven optimality**. Each plot includes the median, interquartile range, and potential outliers.
+This analysis complements the CPU time plots by evaluating **solution quality** when optimality is not reached.
+
+<div align="center">
+  <img src="figures/Opt_Rouen0.png" width="480"/>
+  <img src="figures/Opt_Rouen10.png" width="480"/>
+  <img src="figures/Opt_Rouen20.png" width="480"/>
+</div>
+
+**Observations:**
+- Formulations in the $G$ family not only solve more instances to optimality but also yield **smaller gaps** on unsolved instances.
+- In contrast, $S$, $GW$, and $Q$ produce a higher number of suboptimal solutions, often with **larger optimality gaps**.
+- At $\varepsilon = 1$, most unsolved instances under $G$ show gaps below 40%, while $GW$ and $Q$ often exceed 60–100%.
+- The $S$ formulation consistently shows the **largest median gaps** across densities.
+- As edge density decreases ($\varepsilon = 0.9$ and $0.8$), both $G_a$ and $G_b$ exhibit **larger upper quartiles**, suggesting that sparse compatibility graphs are harder to solve optimally.
+- Between the two, $G_a$ outperforms $G_b$, confirming the theoretical advantage of **non-edge constraints** over **anti-neighborhood constraints**.
+- Interestingly, the **median and first quartile** of $GW$, especially $GW_a$, **decrease** as edge density drops, reflecting the smaller model size in sparser instances.
 <br>

@@ -2,7 +2,7 @@
 
 ## 🗂️ Repository Structure
 
-The repository is organized into two main directories, corresponding to the two railway networks under study:
+The repository is organized into two main (.zip) directories, corresponding to the two railway networks under study:
 
 ### 🛤️ `Rouen/`
 
@@ -64,3 +64,16 @@ The corresponding files for this illustrative instance, contained in the `exampl
 - `example.r` — pairing costs.
 <br>
 
+## 📊 Instance Statistics
+
+Complete statistics for the **Rouen** and **Lille** railway networks are available in the following files:
+- [`Rouen.pdf`](./tables/Rouen.pdf)
+- [`Lille.pdf`](./tables/Lille.pdf)
+
+Key statistics include:
+
+- Number of trains ($|\mathcal{K}|$);
+- Number of routes ($|\mathcal{V}|$);
+- Number of compatibility edges ($|\mathcal{E}|$);
+- Optimal objective value (`Obj`).
+<br>
