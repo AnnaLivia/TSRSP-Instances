@@ -1,7 +1,7 @@
 # Train Single-Routing Selection Problem (TSRSP) — Results Repository
 
 All results reported in this section—**CPU time distributions**, **performance profiles**, and **optimality gap distributions**—refer exclusively to the instances derived from the **Rouen railway network**.  
-These instances are grouped by compatibility graph density, with values of $\varepsilon \in$ {1, 0.9, 0.8}.
+These instances are grouped by compatibility graph density, with values of $\varepsilon \in${1, 0.9, 0.8}.
 
 All experiments were run with a maximum solution time of **300 seconds** per instance.
 
@@ -42,7 +42,7 @@ The following plots show $\rho_f(\tau)$ for each formulation and edge density le
   <img src="figures/PP_Rouen_20.png" width="480"/>
 </div>
 
-**Highlights:**
+**Observations:**
 - Formulations $\hat{G}$, $\hat{G}_a$, and $\hat{G}_b$ dominate across all $\tau$.
 - $G$ is competitive for dense graphs but degrades with sparsity.
 - $GW$, $Q$, and $S$ exhibit poor performance and solve fewer instances in acceptable time frames.
@@ -57,9 +57,9 @@ These values are reported **only for instances that were not solved to proven op
 This analysis complements the CPU time plots by evaluating **solution quality** when optimality is not reached.
 
 <div align="center">
-  <img src="figures/Opt_Rouen0.png" width="480"/>
-  <img src="figures/Opt_Rouen10.png" width="480"/>
-  <img src="figures/Opt_Rouen20.png" width="480"/>
+  <img src="figures/Opt_Rouen0.png" width="550"/>
+  <img src="figures/Opt_Rouen10.png" width="550"/>
+  <img src="figures/Opt_Rouen20.png" width="550"/>
 </div>
 
 **Observations:**
