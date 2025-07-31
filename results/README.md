@@ -46,6 +46,7 @@ The following plots show $\rho_f(\tau)$ for each formulation and edge density le
 - Formulations $\hat{G}$, $\hat{G}_a$, and $\hat{G}_b$ dominate across all $\tau$.
 - $G$ is competitive for dense graphs but degrades with sparsity.
 - $GW$, $Q$, and $S$ exhibit poor performance and solve fewer instances in acceptable time frames.
+- The impact of using the **non-edge constraints** over **anti-neighborhood constraints** is limited.
 <br>
 
 

@@ -25,6 +25,27 @@ This directory contains instances built on the **Lille Railway Network**, charac
 <br>
 
 
+## 📊 Instance Statistics
+
+Complete statistics for the **Rouen** and **Lille** railway networks are available in the following files:
+- [`Rouen.pdf`](./tables/Rouen.pdf);
+- [`Lille.pdf`](./tables/Lille.pdf).
+
+The tables in these two PDF files report the following key statistics for each instance:
+
+- Number of trains ($k$);
+- Number of routes ($|\mathcal{V}|$);
+- Number of compatibility edges ($|\mathcal{E}|$);
+- Information on the objective function values ($Obj$).
+
+For the **Rouen** instances, all instances were solved to optimality. The corresponding table reports the **minimum and maximum optimal objective values** for each group of instances.  
+The complete list of optimal values for all Rouen instances is available in the Excel file [`/data/Computational_Results.xlsx`](../data/Computational_Results.xlsx), in the spreadsheet associated with formulation $G$.
+
+For the **Lille** instances, only three instances—$L_1$, $L_2$, and $L_3$—were solved to optimality. Their respective rows report the optimal solution values.  
+For all remaining instances, the column reports the **best known upper bound** obtained within the time limit (300-seconds).
+<br>
+
+
 ### 🔍 Instance Format
 
 Each subfolder (e.g., `Lille/Lille_Peak/`) contains several instance directories named: `scenario_1/`, `scenario_2/`, ..., `scenario_XXX/`.
@@ -62,18 +83,4 @@ The corresponding files for this illustrative instance, contained in the `exampl
 - `example.p` — route-to-train mapping  
 - `example.q` — route costs  
 - `example.r` — pairing costs.
-<br>
-
-## 📊 Instance Statistics
-
-Complete statistics for the **Rouen** and **Lille** railway networks are available in the following files:
-- [`Rouen.pdf`](./tables/Rouen.pdf)
-- [`Lille.pdf`](./tables/Lille.pdf)
-
-Key statistics include:
-
-- Number of trains ($|\mathcal{K}|$);
-- Number of routes ($|\mathcal{V}|$);
-- Number of compatibility edges ($|\mathcal{E}|$);
-- Optimal objective value (`Obj`).
 <br>
